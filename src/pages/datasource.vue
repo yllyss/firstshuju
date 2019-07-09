@@ -5,20 +5,24 @@
     stripe
     style="width: 100%">
     <el-table-column
+      align="center"
       prop="date"
       label="ID"
       width="180">
     </el-table-column>
     <el-table-column
+      align="center"
       prop="sjybm"
       label="数据源编码"
       width="180">
     </el-table-column>
     <el-table-column
+      align="center"
       prop="sjyms"
       label="数据源描述">
     </el-table-column>
     <el-table-column
+      align="center"
       prop="address"
       label="地址">
     </el-table-column>

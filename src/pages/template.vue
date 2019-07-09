@@ -64,7 +64,7 @@
           size="mini"
           @click="handleEdit(scope.$index, scope.row)">修改</el-button>
 
-          <router-link to="/home/templateshow">
+          <router-link :to="{name:'templateshow',query:{id:scope.row.bname}}">
             <el-button size="mini" type="danger" >
               查看
             </el-button>
@@ -96,7 +96,7 @@
     name: "",
     data() {
       return {
-        currentPage: '1',
+        currentPage: 1,
         data: '',
         pagesize: 8,
         tableData: [
@@ -185,7 +185,7 @@
             time: '2019-01-01 09:00:00',
           },
           {
-            date: '03',
+            date: '04',
             name: 'OA',
             bname: '通知公告信息',
             cname: '雷罡',
@@ -203,10 +203,6 @@
       },
       handleLook(index, row) {
         console.log(index, row);
-      },
-      addDm(){
-        this.$router.push({
-        })
       },
       pageList(){
         this.data = this.tableData

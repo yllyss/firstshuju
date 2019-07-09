@@ -1,6 +1,6 @@
 <template>
   <div style="width: 100%">
-    <span>{{this.$store.state.count}}</span>
+    <h3 class="title">{{this.$route.query.id + '：'}}</h3>
     <div class="seach">
       <el-form>
         <el-input v-model="searchData" placeholder="请输入搜索内容"  class="search"></el-input>
@@ -144,9 +144,7 @@
         userList: []
       }
     },
-    mounted(){
-
-    },
+    mounted(){},
     created() {
       this.pageList()
     },
@@ -180,6 +178,10 @@
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus" scoped>
+  .title{
+      color red
+      padding 20px 0 0 25px
+  }
   .el-menu{
     border-right:none !important;
   }

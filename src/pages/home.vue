@@ -10,7 +10,7 @@
               :router="true"
               class="el-menu-demo"
               mode="horizontal"
-              background-color="#545c64"
+              background-color="#3C8DBC"
               text-color="#fff"
               active-text-color="#ffd04b">
               <el-menu-item v-for="(item,i) in navList" :key="i" :index="'/home' + item.name">
@@ -42,8 +42,6 @@
         ]
       }
     },
-
-
   }
 
 </script>
@@ -53,7 +51,7 @@
   .el-header{
     padding 0
     width:100%
-    background:#545C64
+    background:#3C8DBC
 
     .header{
       width:960px
@@ -62,6 +60,9 @@
   }
   .el-menu-demo{
     width 100%
+  }
+  .el-icon-share{
+    color:#fff
   }
   .el-menu{
     border-right:none !important;

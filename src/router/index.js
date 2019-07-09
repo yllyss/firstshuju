@@ -36,7 +36,8 @@ export default new VueRouter({
         {
           path:'template',
           name:'template',
-          component:template
+          component:template,
+          props:(router) => ({id:router.query.id}),
         },
         {
           path:'templateshow/',
